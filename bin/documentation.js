@@ -3,8 +3,10 @@
 /* eslint no-console: 0 */
 
 import yargs from 'yargs';
-import { hideBin } from 'yargs/helpers';
+import yargsHelpers from 'yargs/helpers';
 import commands from '../src/commands/index.js';
+
+const { hideBin } = yargsHelpers;
 
 yargs(hideBin(process.argv))
   .strict()
